@@ -1,0 +1,12 @@
+li:hover{
+ background-color: dodgerblue;
+ color: white;
+ font-weight: 900;
+}
+li{
+    list-style: decimal;
+}
+button.btn.btn-outline-primary.btn-sm.btn-block{
+    padding: 5px;
+    margin: 0px !important;
+}
