@@ -6,7 +6,7 @@ class CommentList extends Component{
     renderComments(){ 
         return this.props.comments.map((comment,index)=>{
              
-            return <li className="list-group-item d-flex" key={index}> <p>({index+1})</p>
+            return <li className="list-group-item d-flex li-hover" key={index}> <p>({index+1})</p>
              { comment}</li>
         });
     }
@@ -14,9 +14,11 @@ class CommentList extends Component{
         return(
             <div className="conatiner" >
                 <div className="row"> 
-                    <div className="col mt-4 " style={{overflowY:'scroll',height:300}} >
+                    <div className="col-lg-12 ml-auto mr-auto mt-4 ">
+                     <div className={this.props.comments.length===0 ?'d-none':'d-block'}>
                      <h4 className="text-center mt-3">Comment List</h4>
                        <ul className="list-group">{this.renderComments()}</ul>
+                     </div>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-li:hover{
+.li-hover:hover{
  background-color: dodgerblue;
  color: white;
  font-weight: 900;
@@ -10,3 +10,23 @@ button.btn.btn-outline-primary.btn-sm.btn-block{
     padding: 5px;
     margin: 0px !important;
 }
+li.list-inline-item{
+    margin-right: 20px;
+    padding:5px 20px;
+}
+ul.list-inline.pointer{ 
+    padding: 10px;
+}
+ .jay,body{
+    background:#eee url(https://subtlepatterns.com/patterns/geometry2.png)repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center; 
+    box-sizing: border-box;
+    animation: slide 5s linear infinite;
+  }
+   
+  @keyframes slide {
+      from { background-position: 0px 0px; }
+      to { background-position: -400px 0px; }
+  }

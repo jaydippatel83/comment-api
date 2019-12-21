@@ -20,7 +20,7 @@ afterEach(() => {
 
 it('has a text area or button', () => {
     expect(wrepped.find('textarea').length).toEqual(1);
-    expect(wrepped.find('button').length).toEqual(1);
+    expect(wrepped.find('button').length).toEqual(2);
 });
 describe('the text area', () => {
     beforeEach(() => {

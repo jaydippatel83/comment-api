@@ -4,7 +4,6 @@ import * as actions from 'actions';
 import '../../src/index.css';
 
 class CommentBox extends Component {
-
     state = { Comment: '' };
 
     handleChange = (event) => {
@@ -25,11 +24,16 @@ class CommentBox extends Component {
                             <h4 className="mt-3">Add a Comment</h4>
                             <textarea placeholder="Tell us more" style={{ minHeight: 100 }} rows="3" onChange={this.handleChange} value={this.state.Comment} />
                             <div className="mt-3 d-flex">
-                                <button  className="btn btn-outline-success btn-sm btn-block mr-3">Submit Comment</button>
-                                <button  onClick={this.props.fetchComments} className="btn  btn-outline-primary btn-sm btn-block">Fetch Comment</button>
+                                <div className="col-lg-3 pl-0">
+                                    <button className="btn btn-outline-success  btn-block mr-3 ">Submit Comment</button>
+                                </div>
+                                <div className="col-lg-3 pl-0">
+                                    <button onClick={this.props.fetchComments} className="btn  btn-outline-primary  btn-block">Fetch Comment</button>
+                                </div>
+
                             </div>
                         </form >
-                       
+
 
                     </div>
                 </div>
