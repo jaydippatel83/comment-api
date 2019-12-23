@@ -15,8 +15,9 @@ class CommentList extends Component{
             <div className="conatiner" >
                 <div className="row"> 
                     <div className="col-lg-12 ml-auto mr-auto mt-4 ">
-                     <div className={this.props.comments.length===0 ?'d-none':'d-block'}>
-                     <h4 className="text-center mt-3">Comment List</h4>
+                    <h4 className={this.props.comments.length===0 ?'d-block red':'d-none'}>No Data Available !!!</h4>
+                     <div className={this.props.comments.length===0 ?'d-none  ':'d-block '}>
+                     <h4 className="text-center mt-3">Comment List</h4> 
                        <ul className="list-group">{this.renderComments()}</ul>
                      </div>
                     </div>

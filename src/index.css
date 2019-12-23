@@ -30,3 +30,12 @@ ul.list-inline.pointer{
       from { background-position: 0px 0px; }
       to { background-position: -400px 0px; }
   }
+  .red{ 
+      color: red;
+      font-weight: 900;
+  }
+  .notify-style{
+      color:#4caf50;
+      font-weight: 800; 
+  }
+  
